@@ -1,37 +1,20 @@
-HELP.md
-.gradle
+# Gradle 관련 파일들
+.gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IntelliJ IDEA 설정 파일들
+.idea/
 *.iml
-*.ipr
+
+# 빌드 및 배포 스크립트들
+.gradle/
+build/
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+build.gradle
+settings.gradle
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# OS별 불필요한 파일들
+*.DS_Store
+Thumbs.db
 
-### VS Code ###
-.vscode/
+*.env
