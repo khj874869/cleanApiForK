@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settlement Request</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Settlement Request</h1>
+    <form action="/settle-payment" method="POST">
+        <div class="input-group">
+            <label for="amount">Amount (in KRW):</label>
+            <input type="number" id="amount" name="amount" required>
+        </div>
+        <div class="input-group">
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" name="recipient" required>
+        </div>
+        <div class="input-group">
+            <label for="accessToken">Access Token:</label>
+            <input type="text" id="accessToken" name="accessToken" required>
+        </div>
+        <button type="submit">Settle Payment</button>
+    </form>
+</div>
+</body>
+</html>
