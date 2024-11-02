@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settlement Request</title>
+    <title>정산 요청</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div class="container">
-    <h1>Settlement Request</h1>
+    <h1>정산 요청</h1>
     <form action="/settle-payment" method="POST">
         <div class="input-group">
-            <label for="amount">Amount (in KRW):</label>
+            <label for="amount">금액 (KRW):</label>
             <input type="number" id="amount" name="amount" required>
         </div>
         <div class="input-group">
-            <label for="recipient">Recipient:</label>
+            <label for="recipient">수신자:</label>
             <input type="text" id="recipient" name="recipient" required>
         </div>
         <div class="input-group">
-            <label for="accessToken">Access Token:</label>
+            <label for="accessToken">접근 토큰:</label>
             <input type="text" id="accessToken" name="accessToken" required>
         </div>
-        <button type="submit">Settle Payment</button>
+        <button type="submit">결제 정산</button>
     </form>
 </div>
 </body>
